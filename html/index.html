@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermark Image</title>
+    <style>
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 120px;
+        }
+        .form-group input, .form-group textarea {
+            width: 300px;
+        }
+        .form-group small {
+            color: #999999;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<input type="file" id="imageInput" multiple>
+
+<br>
+<div class="form-group">
+    <label for="watermarkText0">ID</label>
+    <input type="text" id="watermarkText0" placeholder="ID" value="C24303526BA3001">
+    <small>?</small>
+</div>
+<div class="form-group">
+    <label for="watermarkText1">名称</label>
+    <textarea id="watermarkText1" placeholder="名称" rows="4" cols="50">孝南祝站普通汇聚机房(祝站人民路涵洞接头点)- 孝南 三汊普通汇聚新机房(祝站街接头点)</textarea>
+    <small>?</small>
+</div>
+<div class="form-group">
+    <label for="watermarkText2">纬度</label>
+    <input type="text" id="watermarkText2" placeholder="纬度">
+    <small>?</small>
+</div>
+<div class="form-group">
+    <label for="watermarkText3">经度</label>
+    <input type="text" id="watermarkText3" placeholder="经度">
+    <small>?</small>
+</div>
+<div class="form-group">
+    <label for="watermarkText4">地址</label>
+    <input type="text" id="watermarkText4" placeholder="地址" value="孝感市孝南区长征路115号">
+    <small>?</small>
+</div>
+<div class="form-group">
+    <label for="watermarkText5">时间</label>
+    <input type="text" id="watermarkText5" placeholder="时间">
+    <small>?</small>
+</div>
+<button onclick="updateWatermarkText()">更新水印文本</button>
+<br>
+<canvas id="outputCanvas"></canvas>
+<script src="js/script.js"></script>
+</body>
+</html>
